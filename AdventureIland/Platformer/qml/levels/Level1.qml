@@ -44,6 +44,40 @@ Levels.LevelBase {
   Platform {
     row: 17
     column: 3
-    size: 10
+    size: 70
+  }
+
+  StaticMonster{
+      row:17
+      column: 4
+      size:3
+  }
+  MoveMOnster{
+      row:19
+      column: 4
+      NumberAnimation on row{
+          from:19
+          to:29
+          duration: 30000
+      }
+
+
+
+
+
+//      Timer{
+//          id:mmt
+//          interval: 60
+//          running: true
+//          repeat: ture
+//          onTriggered: {
+//              row+=1
+//              if(row == 29){
+//                  row = 19
+//              }
+//              console.log("position changing")
+//          }
+//      }
+
   }
 }
