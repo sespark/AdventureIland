@@ -11,7 +11,7 @@ Scene {
     gridSize: 32
 
     Image{
-        source: "../assets/img/bg.jpg"
+        source: "../assets/newimg/bg/day_bg.png"
         anchors.fill:parent
     }
 
@@ -35,7 +35,7 @@ Scene {
             id:r1
             //anchors.centerIn: gameScene
 
-            color:"purple"
+            color:"yellow"
             width: 20
             height: 10
             Text {
@@ -56,7 +56,7 @@ Scene {
             id:r2
             anchors.centerIn: gameScene
 
-            color:"purple"
+            color:"yellow"
             width: 20
             height: 10
             Text {
@@ -80,8 +80,8 @@ Scene {
             id:r3
             anchors.centerIn: gameScene
 
-            color:"purple"
-            width: 20
+            color:"yellow"
+            width: 30
             height: 10
             Text {
                 id: stop

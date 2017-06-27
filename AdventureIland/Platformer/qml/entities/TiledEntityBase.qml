@@ -12,5 +12,6 @@ EntityBase {
   y: level.height - (column+1)*gameScene.gridSize
   width: gameScene.gridSize * size
   height: gameScene.gridSize
+
 }
 

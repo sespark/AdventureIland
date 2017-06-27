@@ -11,7 +11,7 @@ TiledEntityBase {
   Image{
       width: 20
       height: 20
-      source: "../../assets/img/bird_0.png"
+      source: "../../assets/newimg/monster/opponent_walker.png"
   }
 
   BoxCollider {

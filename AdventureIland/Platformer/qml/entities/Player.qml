@@ -10,6 +10,7 @@ EntityBase {
   // add some aliases for easier access to those properties from outside
   property alias collider: collider
   property alias horizontalVelocity: collider.linearVelocity.x
+  property alias verticalVelocity: collider.linearVelocity.y
 
   // the contacts property is used to determine if the player is in touch with any solid objects (like ground or platform), because in this case the player is walking, which enables the ability to jump. contacts > 0 --> walking state
   property int contacts: 0

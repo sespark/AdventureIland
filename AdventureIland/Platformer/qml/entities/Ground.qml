@@ -11,13 +11,13 @@ TiledEntityBase {
     id: tileRow
     Tile {
       pos: "left"
-      image: "../../assets/ground/left.png"
+      image: "../../assets/newimg/ground/ground_grass.png"
     }
     Repeater {
       model: size-2
       Tile {
         pos: "mid"
-        image: "../../assets/ground/mid.png"
+        image: "../../assets/newimg/ground/ground_grass.png"
       }
     }
     Tile {

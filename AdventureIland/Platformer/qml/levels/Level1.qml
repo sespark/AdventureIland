@@ -21,63 +21,377 @@ Levels.LevelBase {
     column: 0
     size: 2
   }
-  Platform {
-    row: 3
-    column: 3
-    size: 4
-  }
-  Platform {
-    row: 7
-    column: 6
-    size: 4
-  }
-  Platform {
-    row: 11
-    column: 3
-    size: 2
+  Ground {
+    row:10
+    column: 0
+    size:53
   }
   Ground {
-    row: 12
+    row:65
     column: 0
-    size: 30
+    size:16
   }
-  Platform {
-    row: 17
-    column: 3
-    size: 70
+  Ground {
+    row:83
+    column: 0
+    size:2
+  }
+  Ground {
+    row:87
+    column: 0
+    size:6
+  }
+  Ground {
+    row:95
+    column: 0
+    size:31
   }
 
-  StaticMonster{
+
+
+  Block {
+    row: 7
+    column: 3
+    size: 1
+  }
+  Block {
+    row: 9
+    column: 3
+    size: 1
+  }
+  Block {
+    row: 10
+    column: 3
+    size: 1
+  }
+
+  Block {
+    row: 13
+    column: 4
+    size: 1
+  }
+
+  Block {
       row:17
       column: 4
       size:3
   }
-  MoveMOnster{
-      row:19
+
+  Block {
+    row: 33
+    column: 3
+    size: 2
+  }
+  Block {
+    row: 54
+    column: 3
+    size: 2
+  }
+
+  Block {
+    row: 57
+    column: 1
+    size: 5
+  }
+
+  Block {
+      row:59
+      column: 2
+      size:3
+  }
+
+  Block {
+    row: 60
+    column: 3
+    size: 2
+  }
+  Block {
+    row: 61
+    column: 4
+    size: 1
+  }
+
+  Block {
+    row: 61
+    column: 5
+    size: 1
+  }
+  Block {
+    row: 61
+    column: 6
+    size: 1
+  }
+
+  Block {
+      row:61
+      column: 7
+      size:1
+  }
+
+  Block {
+    row: 75
+    column: 3
+    size: 1
+  }
+  Block {
+    row: 78
+    column: 3
+    size: 1
+  }
+
+  Block {
+    row: 96
+    column: 3
+    size: 5
+  }
+  Block {
+      row:97
+      column: 1
+      size:3
+  }
+  Block {
+    row: 101
+    column: 2
+    size: 3
+  }
+  Block {
+    row: 102
+    column: 4
+    size: 2
+  }
+
+  Block {
+    row: 101
+    column: 5
+    size: 1
+  }
+
+  Block {
+      row:104
+      column: 5
+      size:1
+  }
+  Block {
+    row: 105
+    column: 6
+    size: 2
+  }
+  Block {
+    row: 114
+    column: 4
+    size: 3
+  }
+
+  BlockAdvanced {
+      row:8
+      column: 3
+      size:1
+  }
+  BlockAdvanced {
+      row:9
+      column: 5
+      size:1
+  }
+  BlockAdvanced {
+      row:10
+      column: 3
+      size:1
+  }
+  BlockAdvanced {
+      row:22
+      column: 3
+      size:2
+  }
+  BlockAdvanced {
+      row:52
+      column: 3
+      size:2
+  }
+  BlockAdvanced {
+      row:76
+      column: 3
+      size:2
+  }
+  BlockAdvanced {
+      row:100
+      column: 6
+      size:1
+  }
+  Bucket{
+      row: 15
+      column:2
+      size:2
+  }
+  Bucket{
+      row:42
+      column: 2
+      size:2
+  }
+  Bucket{
+      row:48
+      column:3
+      size:3
+  }
+  Bucket{
+      row:66
+      column: 2
+      size:2
+  }
+
+  Bucket{
+      row:72
+      column: 3
+      size:3
+  }
+  Bucket{
+      row:109
+      column: 3
+      size:3
+  }
+  StaticMonster{
+      row:6
+      column: 1
+  }
+  StaticMonster{
+      row:13
+      column: 5
+  }
+  StaticMonster{
+      row:33
       column: 4
-      NumberAnimation on row{
-          from:19
-          to:29
-          duration: 30000
+  }
+  StaticMonster{
+      row:45
+      column: 1
+  }
+  StaticMonster{
+      row:87
+      column: 1
+  }
+  Coin{
+      id:co
+      row:26
+      column: 3
+  }
+  Coin{
+      row:27
+      column: 4
+  }
+  Coin{
+      row:28
+      column: 5
+  }
+
+  Coin{
+      row:29
+      column: 4
+  }
+  Coin{
+      row:30
+      column: 3
+  }
+  Coin{
+
+      row:36
+      column: 3
+  }
+  Coin{
+      row:37
+      column: 4
+  }
+  Coin{
+      row:38
+      column: 5
+  }
+
+  Coin{
+      row:39
+      column: 4
+  }
+  Coin{
+      row:40
+      column: 3
+  }
+
+  Star{
+      row:69
+      column: 5
+  }
+
+  Star{
+      row:46
+      column: 5
+  }
+
+  Star{
+      row:103
+      column: 6
+  }
+//  CoinList{
+//      x:96
+//      y:96
+//  }
+
+  Flagpole{
+      row:124
+      column: 1
+  }
+  Flag{
+      row:124
+      column: 4
+  }
+
+  MoveMOnster{
+      id:mm
+      row:2
+      column: 4
+      function back(){
+          if(x == 6*gameScene.gridSize){
+              na.from = 6*gameScene.gridSize
+              na.to = 2*gameScene.gridSize
+              na.start()
+          }
+          if(x == 2*gameScene.gridSize){
+              na.from = 2*gameScene.gridSize
+              na.to = 6*gameScene.gridSize
+              na.start()
+          }
       }
 
+      NumberAnimation on x{
+          id:na
+          from:2*gameScene.gridSize
+          to:6*gameScene.gridSize
+          duration: 4000
+          onStopped: mm.back()
+      }
 
+   }
 
+  MoveMOnster{
+      id:mm2
+      row:68
+      column: 1
+      function back(){
+          if(x == 71*gameScene.gridSize){
+              na2.from = 71*gameScene.gridSize
+              na2.to = 68*gameScene.gridSize
+              na2.start()
+          }
+          if(x == 68*gameScene.gridSize){
+              na2.from = 68*gameScene.gridSize
+              na2.to = 71*gameScene.gridSize
+              na2.start()
+          }
+      }
 
+      NumberAnimation on x{
+          id:na2
+          from:68*gameScene.gridSize
+          to:71*gameScene.gridSize
+          duration: 4000
+          onStopped: mm2.back()
+      }
 
-//      Timer{
-//          id:mmt
-//          interval: 60
-//          running: true
-//          repeat: ture
-//          onTriggered: {
-//              row+=1
-//              if(row == 29){
-//                  row = 19
-//              }
-//              console.log("position changing")
-//          }
-//      }
-
-  }
+   }
 }
